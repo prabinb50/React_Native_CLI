@@ -6,7 +6,7 @@ import FlexDirection from './src/components/styling/FlexDirection'
 import PercentageAndNumberStyling from './src/components/styling/PercentageAndNumberStyling'
 import ThemeBasedStyling from './src/components/styling/ThemeBasedStyling'
 import ScrollViewTopic from './src/components/scrolling/ScrollView'
-import FlatList from './src/components/scrolling/FlatList'
+import FlatListTopic from './src/components/scrolling/FlatList'
 
 
 const App = () => {
@@ -24,8 +24,8 @@ const App = () => {
             {/* <FlexGrow></FlexGrow> */}
 
             {/* For scrolling*/}
-            <ScrollViewTopic></ScrollViewTopic>
-            {/* <FlatList></FlatList> */}
+            {/* <ScrollViewTopic></ScrollViewTopic> */}
+            <FlatListTopic></FlatListTopic> {/* FlatList is a better option rather than ScrollView */}
         </SafeAreaView>
     )
 }
