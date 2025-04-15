@@ -5,7 +5,8 @@ import FlexStyling from './src/components/styling/FlexStyling'
 import FlexDirection from './src/components/styling/FlexDirection'
 import PercentageAndNumberStyling from './src/components/styling/PercentageAndNumberStyling'
 import ThemeBasedStyling from './src/components/styling/ThemeBasedStyling'
-import FlexGrow from './src/components/styling/FlexGrow'
+import ScrollViewTopic from './src/components/scrolling/ScrollView'
+import FlatList from './src/components/scrolling/FlatList'
 
 
 const App = () => {
@@ -14,11 +15,17 @@ const App = () => {
             {/* <Text>App</Text> */}
 
             {/* <FundamentalConcepts /> */}
+
+            {/* Styling Topics */}
             {/* <ThemeBasedStyling></ThemeBasedStyling> */}
             {/* <PercentageAndNumberStyling></PercentageAndNumberStyling> */}
             {/* <FlexStyling></FlexStyling> */}
             {/* <FlexDirection></FlexDirection> */}
-            <FlexGrow></FlexGrow>
+            {/* <FlexGrow></FlexGrow> */}
+
+            {/* For scrolling*/}
+            <ScrollViewTopic></ScrollViewTopic>
+            {/* <FlatList></FlatList> */}
         </SafeAreaView>
     )
 }
