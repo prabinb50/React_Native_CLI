@@ -7,6 +7,7 @@ import PercentageAndNumberStyling from './src/components/styling/PercentageAndNu
 import ThemeBasedStyling from './src/components/styling/ThemeBasedStyling'
 import ScrollViewTopic from './src/components/scrolling/ScrollView'
 import FlatListTopic from './src/components/scrolling/FlatList'
+import HandlingUserInput from './src/components/HandlingUserInput'
 
 
 const App = () => {
@@ -25,7 +26,10 @@ const App = () => {
 
             {/* For scrolling*/}
             {/* <ScrollViewTopic></ScrollViewTopic> */}
-            <FlatListTopic></FlatListTopic> {/* FlatList is a better option rather than ScrollView */}
+            {/* FlatList is a better option rather than ScrollView */}
+            {/* <FlatListTopic></FlatListTopic>  */}
+
+            <HandlingUserInput></HandlingUserInput>
         </SafeAreaView>
     )
 }
