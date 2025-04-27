@@ -1,3 +1,4 @@
+import 'react-native-gesture-handler';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import FundamentalConcepts from './src/components/FundamentalConcepts'
@@ -8,7 +9,6 @@ import ThemeBasedStyling from './src/components/styling/ThemeBasedStyling'
 import ScrollViewTopic from './src/components/scrolling/ScrollView'
 import FlatListTopic from './src/components/scrolling/FlatList'
 import HandlingUserInput from './src/components/HandlingUserInput'
-
 
 const App = () => {
     return (
@@ -30,7 +30,8 @@ const App = () => {
             {/* <FlatListTopic></FlatListTopic>  */}
 
             <HandlingUserInput></HandlingUserInput>
-        </SafeAreaView>
+
+        </SafeAreaView >
     )
 }
 
