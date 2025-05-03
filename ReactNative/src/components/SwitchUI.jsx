@@ -22,7 +22,7 @@ const SwitchUI = () => {
                 onValueChange={toggleSwitch} // Function to call when the switch is toggled
 
                 // Value of the switch
-                value={isEnabled} 
+                value={isEnabled}
 
                 // Style of the switch
                 style={{
