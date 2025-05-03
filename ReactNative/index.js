@@ -11,9 +11,9 @@ import Splash from './Splash';
 
 import { name as appName } from './app.json';
 
-// AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent(appName, () => App);
 // AppRegistry.registerComponent(appName, () => StackNavigation);
 // AppRegistry.registerComponent(appName, () => TabNavigation);
 // AppRegistry.registerComponent(appName, () => SimpleCRUDProject);
-AppRegistry.registerComponent(appName, () => Splash);
+// AppRegistry.registerComponent(appName, () => Splash);
 

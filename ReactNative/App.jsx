@@ -9,6 +9,7 @@ import ThemeBasedStyling from './src/components/styling/ThemeBasedStyling'
 import ScrollViewTopic from './src/components/scrolling/ScrollView'
 import FlatListTopic from './src/components/scrolling/FlatList'
 import HandlingUserInput from './src/components/HandlingUserInput'
+import GridWithMap from './src/components/GridWithMap';
 
 const App = () => {
     return (
@@ -29,7 +30,8 @@ const App = () => {
             {/* FlatList is a better option rather than ScrollView */}
             {/* <FlatListTopic></FlatListTopic>  */}
 
-            <HandlingUserInput></HandlingUserInput>
+            {/* <HandlingUserInput></HandlingUserInput> */}
+            <GridWithMap></GridWithMap>
 
         </SafeAreaView >
     )
