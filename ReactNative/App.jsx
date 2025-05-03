@@ -10,6 +10,7 @@ import ScrollViewTopic from './src/components/scrolling/ScrollView'
 import FlatListTopic from './src/components/scrolling/FlatList'
 import HandlingUserInput from './src/components/HandlingUserInput'
 import GridWithMap from './src/components/GridWithMap';
+import SwitchUI from './src/components/SwitchUI';
 
 const App = () => {
     return (
@@ -31,7 +32,10 @@ const App = () => {
             {/* <FlatListTopic></FlatListTopic>  */}
 
             {/* <HandlingUserInput></HandlingUserInput> */}
-            <GridWithMap></GridWithMap>
+
+            {/* <GridWithMap></GridWithMap> */}
+
+            <SwitchUI></SwitchUI>
 
         </SafeAreaView >
     )
