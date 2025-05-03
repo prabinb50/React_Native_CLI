@@ -12,7 +12,7 @@ import SwitchUI from './src/components/SwitchUI';
 import SearchFunctionality from './src/components/SearchFunctionality';
 import GridWithMap from './src/components/GridWithMap'
 
-const App = () => {
+const App_1 = () => {
     return (
         <SafeAreaView style={styles.container}>
             {/* <Text>App</Text> */}
@@ -33,17 +33,17 @@ const App = () => {
 
             {/* <HandlingUserInput></HandlingUserInput> */}
 
-            {/* <GridWithMap></GridWithMap> */}
+            <GridWithMap></GridWithMap>
 
             {/* <SwitchUI></SwitchUI> */}
 
-            <SearchFunctionality></SearchFunctionality>
+            {/* <SearchFunctionality></SearchFunctionality> */}
 
         </SafeAreaView >
     )
 }
 
-export default App
+export default App_1
 
 const styles = StyleSheet.create({
     container: {

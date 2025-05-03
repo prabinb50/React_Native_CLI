@@ -36,8 +36,9 @@ const dummyData = [
 ]
 
 const GridWithMap = () => {
+    // console.log("GridWithMap");
     return (
-        <View>
+        <View style={{ flex: 1 }}>
             <Text style={{ textAlign: "center", padding: 10, fontWeight: "bold" }}>GridWithMap</Text>
 
             <ScrollView contentContainerStyle={styles.container} >
