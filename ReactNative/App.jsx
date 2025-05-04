@@ -1,57 +1,47 @@
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import FundamentalConcepts from './src/components/FundamentalConcepts'
-import FlexStyling from './src/components/styling/FlexStyling'
-import FlexDirection from './src/components/styling/FlexDirection'
-import PercentageAndNumberStyling from './src/components/styling/PercentageAndNumberStyling'
-import ThemeBasedStyling from './src/components/styling/ThemeBasedStyling'
-import ScrollViewTopic from './src/components/scrolling/ScrollView'
-import FlatListTopic from './src/components/scrolling/FlatList'
-import HandlingUserInput from './src/components/HandlingUserInput'
-import SwitchUI from './src/components/SwitchUI';
-import SearchFunctionality from './src/components/SearchFunctionality';
-import GridWithMap from './src/components/GridWithMap'
+import { SafeAreaView, StyleSheet } from 'react-native'
+import React, { useEffect, useState } from 'react'
+import NativeSplashScreen from 'react-native-splash-screen';
+import OnboardingScreen1 from './src/components/OnboardingScreen1';
+import { SplashScreen1 } from './src/components/SplashScreen1';
 
 const App = () => {
+    // State to track the current screen
+    const [currentScreen, setCurrentScreen] = useState('splash');
+
+    useEffect(() => {
+        // Hide the native splash screen when the app loads
+        NativeSplashScreen.hide();
+    }, []);
+
+    // Callback function to handle the completion of the splash screen animation
+    const handleSplashComplete = () => {
+        setCurrentScreen('onboarding'); // Move to the onboarding screen
+    };
+
+    // Return appropriate screen based on the current screen state
     return (
         <SafeAreaView style={styles.container}>
-            {/* <Text>App</Text> */}
+            {currentScreen === 'splash' ? (
+                // Show the splash screen
+                <SplashScreen1 onAnimationComplete={handleSplashComplete} />
+            ) : (
+                // Show the onboarding screen
+                <OnboardingScreen1 />
+            )}
 
-            {/* <FundamentalConcepts /> */}
-
-            {/* Styling Topics */}
-            {/* <ThemeBasedStyling></ThemeBasedStyling> */}
-            {/* <PercentageAndNumberStyling></PercentageAndNumberStyling> */}
-            {/* <FlexStyling></FlexStyling> */}
-            {/* <FlexDirection></FlexDirection> */}
-            {/* <FlexGrow></FlexGrow> */}
-
-            {/* For scrolling*/}
-            {/* <ScrollViewTopic></ScrollViewTopic> */}
-            {/* FlatList is a better option rather than ScrollView */}
-            {/* <FlatListTopic></FlatListTopic>  */}
-
-            {/* <HandlingUserInput></HandlingUserInput> */}
-
-            {/* <GridWithMap></GridWithMap> */}
-
-            {/* <SwitchUI></SwitchUI> */}
-
-            <SearchFunctionality></SearchFunctionality>
-
-        </SafeAreaView >
+        </SafeAreaView>
     )
 }
 
 export default App
 
+// Styles for the container
 const styles = StyleSheet.create({
     container: {
-        flex: 1, // Ensure SafeAreaView takes up the full screen
+        flex: 1,
     },
 })
 
-// npx react-native run-android
 
-
+// style property "marginTop" is not supported by react native
 
